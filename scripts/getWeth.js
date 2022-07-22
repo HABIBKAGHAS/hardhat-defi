@@ -11,7 +11,7 @@ async function getWeth() {
         deployer
     );
     const txResponse = await iWeth.deposit({
-        value: AMOUNT,
+        value: AMOUNT
     });
     await txResponse.wait(1);
     const wethBalance = await iWeth.balanceOf(deployer);
